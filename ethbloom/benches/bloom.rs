@@ -84,6 +84,7 @@ fn contains_input_hash(b: &mut Bencher) {
 		assert!(bloom.contains_input(Input::Hash(&address)));
 	});
 }
+//					bit_combos.iter().any(|bloom| hdr_bloom & *bloom == *bloom)
 
 #[bench]
 fn does_not_contain_hash(b: &mut Bencher) {
